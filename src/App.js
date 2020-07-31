@@ -1,6 +1,11 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Testclasscomp from './Testclasscomp';
+import Testfuncomp from './Testfuncomp';
+import Teststate from './Teststate';
+import Testshowhide from './Testshowhide';
+import Testeventhandling from './Testeventhandling';
 
 function App() {
   return (
@@ -10,14 +15,15 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <Testclasscomp info={{name:'Nilesh', age:'28'}} data='Joshi' />
+        
+
+        <Testfuncomp info={{name:'Nilesh', age:'28'}} data='Joshi' />
+
+        <Teststate />
+        <Testshowhide />
+        <Testeventhandling />
+        
       </header>
     </div>
   );
